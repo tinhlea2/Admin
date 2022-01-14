@@ -1637,6 +1637,10 @@ h2.title {
     vertical-align: inherit;
 }
 
+.row .table-form {
+    width: 95%;
+}
+
 #cart_items .cart_info .image {
     padding-left: 30px;
 }
