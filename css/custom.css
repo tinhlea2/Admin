@@ -1083,6 +1083,10 @@
     position: absolute;
 }
 
+.nav .navbar-nav {
+    float: right;
+}
+
 .nav-sm .container.body .col-md-3.left_col.menu_fixed {
     position: fixed;
     height: 100%;
@@ -1756,6 +1760,7 @@ a:focus {
 .dropdown-item {
     width: 100%;
     padding: 12px 20px;
+    display: block;
 }
 
 .top_nav li a i {
@@ -2232,7 +2237,7 @@ h2 {
 }
 
 .x_title h2 {
-    margin: 16px 0 6px;
+    margin: 16px 0 20px;
     float: left;
     display: block;
     text-overflow: ellipsis;

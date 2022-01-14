@@ -77,7 +77,7 @@
                                         <li><a href="nhanvien.html">Quản lý nhân viên</a></li>
                                         <li><a href="sanpham.html">Quản lý hàng hóa</a></li>
                                         <li><a href="khachhang.html">Quản lý khách hàng</a></li>
-                                        <li><a href="form_wizards.html">Quản lý hóa đơn</a></li>
+                                        <li><a href="hoadon.html">Quản lý hóa đơn</a></li>
                                     </ul>
                                 </li>
 
@@ -122,15 +122,60 @@
                     <!-- /menu footer buttons -->
                 </div>
             </div>
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu">
+                    <div class="nav toggle">
+                        <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                    </div>
+                    <nav class="nav navbar-nav" style="float: right;">
+                        <ul class=" navbar-right">
+                            <li class="nav-item dropdown js-nav" style="padding-left: 15px;">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                                    <img src="images/img.jpg" alt="">Tinhle
+                                    <span class="fa fa-chevron-down js-pro"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="javascript:;"> Tài khoản</a>
 
+
+                                    <a class="dropdown-item" href="login.html"><i class="fa fa-sign-out pull-right"></i> Đăng xuất</a>
+                                </div>
+                            </li>
+
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /top navigation -->
 
             <!-- page content -->
             <div class="right_col" role="main">
-                <div class="x_title">
+                <div class="">
 
                     <h2>Quản lý đơn hàng</h2>
                 </div>
+                <div class="h_content ">
 
+                    <div class=" col-sm-4">
+
+                        <input type="hidden">
+                    </div>
+
+                    <div class="form-group form-inline">
+                        <div class="col-sm-8">
+                            <input type="datetime-local" name="" class="form-control left" id="" placeholder="">
+                            <button id="search_btn" type="button" class="btn btn-primary left">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
 
 
                 <div class="col-md-12 col-sm-12 ">
@@ -141,6 +186,7 @@
                                 <th>Tên khách hàng</th>
                                 <th>Địa chỉ</th>
                                 <th>SĐT</th>
+                                <th>Ngày đặt hàng</th>
                                 <th class="text-center">Chi tiết đơn hàng</th>
                                 <th class="text-center">Xác nhận</th>
                                 <th class="text-center">Hủy đơn hàng</th>
@@ -153,6 +199,7 @@
                                 <td><a href="#">Lê Thị Tình</a></td>
                                 <td>Sen thủy</td>
                                 <td>096869954</td>
+                                <td>21/06/2022</td>
                                 <td class="text-center">
                                     <button type="button" class="js-add-de">
                                         <i class="fa fa-eye"></i>
@@ -173,6 +220,7 @@
                                 <td><a href="#">Lê Thị Tình</a></td>
                                 <td>Sen thủy</td>
                                 <td>096869954</td>
+                                <td>30/0/2022</td>
                                 <td class="text-center">
                                     <button type="button" class="js-add-de">
                                         <i class="fa fa-eye"></i>

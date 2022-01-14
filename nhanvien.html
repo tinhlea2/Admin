@@ -37,6 +37,34 @@
 <body class="nav-md">
     <div class="container body">
         <div class="main_container">
+
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu">
+                    <div class="nav toggle">
+                        <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                    </div>
+                    <nav class="nav navbar-nav" style="float: right;">
+                        <ul class=" navbar-right">
+                            <li class="nav-item dropdown js-nav" style="padding-left: 15px;">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                                    <img src="images/img.jpg" alt="">Tinhle
+                                    <span class="fa fa-chevron-down js-pro"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="javascript:;"> Tài khoản</a>
+
+
+                                    <a class="dropdown-item" href="login.html"><i class="fa fa-sign-out pull-right"></i> Đăng xuất</a>
+                                </div>
+                            </li>
+
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /top navigation -->
             <div class="col-md-3 left_col">
                 <div class="left_col scroll-view">
                     <div class="navbar nav_title" style="border: 0;">
@@ -122,21 +150,24 @@
             </div>
 
 
+
+
             <!-- page content -->
             <div class="right_col" role="main">
-                <div class="x_title">
+                <div class="">
 
                     <h2>Quản lý nhân viên</h2>
                 </div>
 
                 <div class="h_content ">
 
-                    <div class=" col-sm-4">
 
-                        <input type="hidden">
-                    </div>
 
                     <div class="form-group form-inline">
+
+                        <div class="col-sm-4">
+                            <input type="hidden">
+                        </div>
                         <div class="col-sm-4">
                             <input type="text" name="" class="form-control left" id="" placeholder="ID/Tên nhân viên">
 
@@ -145,7 +176,7 @@
                             </button>
                         </div>
                         <div class="col-sm-4">
-                            <button type="button" class="btn btn-primary right js-add-em">
+                            <button type="button" class="btn btn-primary left js-add-em">
                                 <i class="fa fa-pencil"></i>
                                 Thêm mới
                             </button>
