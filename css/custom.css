@@ -2283,6 +2283,20 @@ h2 {
     margin-top: 20px;
 }
 
+.h_content .left {
+    float: left;
+    margin-left: 0px !important;
+    margin-right: 5px !important;
+}
+
+.h_content select,
+.h_content input {
+    border-radius: 3px;
+    min-width: 160px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
 legend {
     padding-bottom: 7px;
 }

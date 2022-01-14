@@ -153,45 +153,45 @@
 
 
                     </div>
+                    <div class="col-md-9 col-sm-9 ">
+                        <table class="table_e">
+                            <thead>
+                                <tr>
+                                    <th>Ngày mua</th>
+                                    <th>Sản phẩm</th>
+                                    <th>Số lượng</th>
+                                    <th>Giá tiền</th>
+                                    <th>Tổng thanh toán</th>
+                                </tr>
+                                <tr>
+                                    <td>01/01/2022</td>
+                                    <td>iphon13 mini
+                                    </td>
+                                    <td>01</td>
+                                    <td>20.000.000 VNĐ</td>
+                                    <td>20.000.000 VNĐ</td>
+                                </tr>
+                            </thead>
 
-
-                </div>
-
-                <div class="col-md-9 col-sm-9 ">
-                    <table class="table_e">
-                        <thead>
-                            <tr>
-                                <th>Ngày mua</th>
-                                <th>Sản phẩm</th>
-                                <th>Số lượng</th>
-                                <th>Giá tiền</th>
-                                <th>Tổng thanh toán</th>
-                            </tr>
-                            <tr>
-                                <td>01/01/2022</td>
-                                <td>iphon13 mini
-                                </td>
-                                <td>01</td>
-                                <td>20.000.000 VNĐ</td>
-                                <td>20.000.000 VNĐ</td>
-                            </tr>
-                        </thead>
-
-                    </table>
-                </div>
-
-                <div class="col-sm-3">
-                    <div id="Filter">
-
-                        <select name="" id="filter" class="right form-control" onchange="location = options[selectedIndex].value;">
-                            <option value="">Lọc tất cả</option>
-                            <option value="timkiemMHngay.html">Lọc theo ngày</option>
-                            <option value="timkiemMHnam.html">Lọc theo tháng</option>
-                           
-                        </select>
+                        </table>
                     </div>
 
+                    <div class="col-sm-3">
+                        <select name="" id="category" class="right form-control " onchange="location = options[selectedIndex].value;">
+                            <option value="chitietmuahang.html">Lọc tất cả</option>
+                            <option value="timkiemMHngay.html" >Lọc theo ngày</option>
+                            <option value="" selected>Lọc theo tháng</option>
+                           
+                        </select>
+                        <input type="month" class="form-control left" placeholder="Tháng">
+                        <input type="text" class="form-control left" placeholder="Năm">
+
+                    </div>
+
+
                 </div>
+
+
 
 
             </div>
@@ -239,7 +239,7 @@
     <!-- Switchery -->
     <script src="../vendors/switchery/dist/switchery.min.js"></script>
     <!-- Select2 -->
-    <script src="js/select2.full.min.js"></script>
+    <script src="../vendors/select2/dist/js/select2.full.min.js"></script>
     <!-- Parsley -->
     <script src="../vendors/parsleyjs/dist/parsley.min.js"></script>
     <!-- Autosize -->
@@ -247,18 +247,11 @@
     <!-- jQuery autocomplete -->
     <script src="../vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js"></script>
     <!-- starrr -->
-    <script src="js/starrr/dist/starrr.js"></script>
+    <script src="../vendors/starrr/dist/starrr.js"></script>
     <!-- Custom Theme Scripts -->
     <script src="js/custom.min.js"></script>
-    <script src="js/custom.js"></script>
 
-    <script>
-        const x = document.getElementById('filter').value;
 
-        function filter() {
-            location = Option[selecedIndex].value
-        }
-    </script>
 
 
 
