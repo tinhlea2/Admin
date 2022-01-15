@@ -134,7 +134,7 @@
                                     <span class="fa fa-chevron-down js-pro"></span>
                                 </a>
                                 <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="javascript:;"> Tài khoản</a>
+                                    <a class="dropdown-item" href="taikhoan.html"> Tài khoản</a>
 
 
                                     <a class="dropdown-item" href="login.html"><i class="fa fa-sign-out pull-right"></i> Đăng xuất</a>
@@ -150,110 +150,113 @@
 
             <!-- page content -->
             <div class="right_col" role="main">
-                <div class="">
+                <div class="x_panel">
+                    <div class="">
 
-                    <h2>Quản lý sản phẩm</h2>
-                </div>
+                        <h2>Quản lý sản phẩm</h2>
+                    </div>
 
-                <div class="h_content ">
+                    <div class="h_content ">
 
 
 
-                    <div class="form-group form-inline">
+                        <div class="form-group form-inline">
 
-                        <div class="col-sm-9">
-                            <button id="search_btn" type="button" class="btn btn-primary right">
-                                <i class="fa fa-search"></i>
-                            </button>
+                            <div class="col-sm-9">
+                                <button id="search_btn" type="button" class="btn btn-primary right">
+                                    <i class="fa fa-search"></i>
+                                </button>
 
-                            <select name="" id="category" class="right form-control">
-                                <option value="">Danh mục</option>
-                                <option value="">Iphone</option>
-                                <option value="">Samsung</option>
-                                <option value="">Xiaomi</option>
-                                <option value="">Vivo</option>
-                                <option value="">Vsmart</option>
-                            </select>
-                            <input type="text" name="" class="form-control right" id="" placeholder="Mã/Tên sản phẩm">
+                                <select name="" id="category" class="right form-control">
+                                    <option value="">Danh mục</option>
+                                    <option value="">Iphone</option>
+                                    <option value="">Samsung</option>
+                                    <option value="">Xiaomi</option>
+                                    <option value="">Vivo</option>
+                                    <option value="">Vsmart</option>
+                                </select>
+                                <input type="text" name="" class="form-control right" id="" placeholder="Mã/Tên sản phẩm">
+                            </div>
+
+
+                            <div class="col-sm-3">
+                                <button type="button" class="btn btn-primary left js-add-em">
+                                    <i class="fa fa-pencil"></i>
+                                    Thêm mới
+                                </button>
+                            </div>
+
                         </div>
 
-
-                        <div class="col-sm-3">
-                            <button type="button" class="btn btn-primary left js-add-em">
-                                <i class="fa fa-pencil"></i>
-                                Thêm mới
-                            </button>
-                        </div>
 
                     </div>
 
+                    <div class="col-md-12 col-sm-12 ">
+                        <table class="table_e">
+                            <thead>
+                                <tr>
+                                    <th>Mã sản phẩm</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Dòng sản phẩm</th>
+                                    <th>Giá nhập</th>
+                                    <th>Số lượng</th>
+                                    <th>Ngày nhập</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="file">
+                                    <td>IP01</td>
+                                    <td><a href="#">Iphone 13 promax</a></td>
+                                    <td>Iphone</td>
+                                    <td>32.000.000 VND</td>
+                                    <td>09</td>
+                                    <td>12/06/2021</td>
+                                    <td class="text-center">
+                                        <button type="button" class="js-add-de">
+                                        <i class="fa fa-eye"></i>
+                                        </button>
+                                        <button type="button" class=" right js-add-up">
+                                        <i class="fa fa-pencil"></i>
+                                        </button>
+                                        <button type="button" class=" right js-add-dele">
+                                        <i class="fa fa-trash-o"></i>
+                                        </button>
+                                    </td>
+                                </tr>
 
+                                <tr id="file">
+                                    <td>IP01</td>
+                                    <td><a href="#">Iphone 13 promax</a></td>
+                                    <td>Iphone</td>
+                                    <td>32.000.000 VND</td>
+                                    <td>09</td>
+                                    <td>12/06/2021</td>
+                                    <td class="text-center">
+                                        <button type="button" class="js-add-de">
+                                        <i class="fa fa-eye"></i>
+                                        </button>
+                                        <button type="button" class=" right js-add-up">
+                                        <i class="fa fa-pencil"></i>
+                                        </button>
+                                        <button type="button" class=" right js-add-dele">
+                                        <i class="fa fa-trash-o"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="paging">
+                        <ul class="pagination right">
+                            <li><a href="#">Trang đầu</a></li>
+                            <li class="active"><a href="">1</a></li>
+                            <li><a href="#">Trang cuối</a></li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="col-md-12 col-sm-12 ">
-                    <table class="table_e">
-                        <thead>
-                            <tr>
-                                <th>Mã sản phẩm</th>
-                                <th>Tên sản phẩm</th>
-                                <th>Dòng sản phẩm</th>
-                                <th>Giá nhập</th>
-                                <th>Số lượng</th>
-                                <th>Ngày nhập</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr id="file">
-                                <td>IP01</td>
-                                <td><a href="#">Iphone 13 promax</a></td>
-                                <td>Iphone</td>
-                                <td>32.000.000 VND</td>
-                                <td>09</td>
-                                <td>12/06/2021</td>
-                                <td class="text-center">
-                                    <button type="button" class="js-add-de">
-                                    <i class="fa fa-eye"></i>
-                                    </button>
-                                    <button type="button" class=" right js-add-up">
-                                    <i class="fa fa-pencil"></i>
-                                    </button>
-                                    <button type="button" class=" right js-add-dele">
-                                    <i class="fa fa-trash-o"></i>
-                                    </button>
-                                </td>
-                            </tr>
-
-                            <tr id="file">
-                                <td>IP01</td>
-                                <td><a href="#">Iphone 13 promax</a></td>
-                                <td>Iphone</td>
-                                <td>32.000.000 VND</td>
-                                <td>09</td>
-                                <td>12/06/2021</td>
-                                <td class="text-center">
-                                    <button type="button" class="js-add-de">
-                                    <i class="fa fa-eye"></i>
-                                    </button>
-                                    <button type="button" class=" right js-add-up">
-                                    <i class="fa fa-pencil"></i>
-                                    </button>
-                                    <button type="button" class=" right js-add-dele">
-                                    <i class="fa fa-trash-o"></i>
-                                    </button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="paging">
-                    <ul class="pagination right">
-                        <li><a href="#">Trang đầu</a></li>
-                        <li class="active"><a href="">1</a></li>
-                        <li><a href="#">Trang cuối</a></li>
-                    </ul>
-                </div>
             </div>
 
             <!-- /page content -->
