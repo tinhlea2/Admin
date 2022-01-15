@@ -32,17 +32,17 @@
     <!-- Custom Theme Style -->
     <link href="css/custom.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-
-
 </head>
 
 <body class="nav-md">
     <div class="container body">
         <div class="main_container">
+
+
             <div class="col-md-3 left_col">
                 <div class="left_col scroll-view">
                     <div class="navbar nav_title" style="border: 0;">
-                        <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>PoorShop!</span></a>
+                        <a href="index2.html" class="site_title"><i class="fa fa-paw"></i> <span>PoorShop!</span></a>
                     </div>
 
                     <div class="clearfix"></div>
@@ -147,91 +147,91 @@
             </div>
             <!-- /top navigation -->
 
+
+
             <!-- page content -->
             <div class="right_col" role="main">
                 <div class="x_panel">
                     <div class="">
 
-                        <h2>Quản lý đơn hàng</h2>
+                        <h2>Báo cáo thu chi theo ngày</h2>
                     </div>
+
                     <div class="h_content ">
 
-                        <div class=" col-sm-4">
 
-                            <input type="hidden">
-                        </div>
 
                         <div class="form-group form-inline">
-                            <div class="col-sm-8">
-                                <input type="datetime-local" name="" class="form-control left" id="" placeholder="">
+
+                            <div class="col-sm-4">
+                                <input type="hidden">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="datetime-local" name="" class="form-control left" id="">
+
                                 <button id="search_btn" type="button" class="btn btn-primary left">
                                     <i class="fa fa-search"></i>
                                 </button>
                             </div>
 
-
                         </div>
 
 
                     </div>
 
-
                     <div class="col-md-12 col-sm-12 ">
                         <table class="table_e">
                             <thead>
                                 <tr>
-                                    <th>Mã đơn hàng</th>
-                                    <th>Tên khách hàng</th>
-                                    <th>Địa chỉ</th>
-                                    <th>SĐT</th>
-                                    <th>Ngày đặt hàng</th>
-                                    <th class="text-center">Chi tiết đơn hàng</th>
-                                    <th class="text-center">Xác nhận</th>
-                                    <th class="text-center">Hủy đơn hàng</th>
+                                    <th>Ngày</th>
+                                    <th>Tổng các khoản thu</th>
+                                    <th class="text-center">Chi tiết khoản thu</th>
+                                    <th>Tổng các khoản chi</th>
+                                    <th class="text-center">Chi tiết khoản chi</th>
+                                    <th>Tổng kêt</th>
+                                    <th></th>
 
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr id="file">
-                                    <td>DH01</td>
-                                    <td><a href="#">Lê Thị Tình</a></td>
-                                    <td>Sen thủy</td>
-                                    <td>096869954</td>
-                                    <td>21/06/2022</td>
+                                    <td>01/01/2022</td>
+                                    <td>300.000.000 VND</td>
                                     <td class="text-center">
-                                        <button type="button" class="js-add-de">
-                                            <i class="fa fa-eye"></i>
-                                            </button>
+                                        <button type="button" class="js-revenue">
+                                        <i class="fa fa-eye"></i>
+                                        </button>
+
                                     </td>
+                                    <td>0 VNĐ</td>
                                     <td class="text-center">
-                                        <input type="checkbox">
+                                        <button type="button" class="js-expenses">
+                                        <i class="fa fa-eye"></i>
+                                        </button>
+
                                     </td>
-                                    <td class="text-center">
-                                        <button type="button" class=" right js-add-dele">
-                                            <i class="fa fa-trash-o"></i>
-                                            </button>
-                                    </td>
+                                    <td>300.000.000 VNĐ</td>
+
                                 </tr>
 
                                 <tr id="file1">
-                                    <td>DH02</td>
-                                    <td><a href="#">Lê Thị Tình</a></td>
-                                    <td>Sen thủy</td>
-                                    <td>096869954</td>
-                                    <td>30/0/2022</td>
+                                    <td>01/01/2022</td>
+                                    <td>300.000.000 VND</td>
                                     <td class="text-center">
-                                        <button type="button" class="js-add-de">
-                                            <i class="fa fa-eye"></i>
-                                            </button>
+                                        <button type="button" class="js-revenue">
+                                        <i class="fa fa-eye"></i>
+                                        </button>
+
                                     </td>
+                                    <td>0 VNĐ</td>
                                     <td class="text-center">
-                                        <input type="checkbox">
+                                        <button type="button" class="js-expenses">
+                                        <i class="fa fa-eye"></i>
+                                        </button>
+
                                     </td>
-                                    <td class="text-center">
-                                        <button type="button" class=" right js-add-dele">
-                                            <i class="fa fa-trash-o"></i>
-                                            </button>
-                                    </td>
+                                    <td>300.000.000 VNĐ</td>
+
                                 </tr>
                             </tbody>
                         </table>
@@ -239,8 +239,12 @@
 
                     <div class="paging">
                         <ul class="pagination right">
-                            <li><a href="#">Trang đầu</a></li>
+                            <li class=""><a href="#">Trang đầu</a></li>
+                            <li class=""><a href="#">«</a></li>
                             <li class="active"><a href="">1</a></li>
+                            <li class=""><a href="">2</a></li>
+                            <li class=""><a href="">3</a></li>
+                            <li><a href="">»</a></li>
                             <li><a href="#">Trang cuối</a></li>
                         </ul>
                     </div>
@@ -251,108 +255,133 @@
 
             <!-- /page content -->
 
-            <!--Modal detail-->
-            <div id="detailform" class="modal fade js-modal1">
+            <!--Modal revenue -->
+            <div id="detailform" class="modal fade js-modal">
+                <div class="modal-dialog">
+                    <div class="modal-content js-modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close js-modal-close">
+                                <span>x</span>
+                            </button>
+                            <h4 class="modal-title">Khoản thu trong ngày</h4>
+                        </div>
+
+                        <div class="modal-body form-horizontal">
+                            <table class="table_e">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">
+                                            STT
+                                        </th>
+                                        <th class="text-center">Tên sản phẩm</th>
+                                        <th class="text-center">Số lượng</th>
+                                        <th class="text-center">Tổng tiền</th>
+                                        <th class="text-center">Số tiền nộp</th>
+                                        <th class="text-center">Người nộp</th>
+                                        <th class="text-center">Bộ phận</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center">1</td>
+                                        <td class="text-center">Ip 13 mini</td>
+                                        <td class="text-center">01</td>
+                                        <td class="text-center">34.000.000 VNĐ</td>
+                                        <td class="text-center">34.000.000 VNĐ</td>
+                                        <td class="text-center">Lê Thị Tình</td>
+                                        <td class="text-center">Bán hàng</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="text-center">2</td>
+                                        <td class="text-center">Ip 13 mini</td>
+                                        <td class="text-center">01</td>
+                                        <td class="text-center">34.000.000 VNĐ</td>
+                                        <td class="text-center">34.000.000 VNĐ</td>
+                                        <td class="text-center">Lê Thị Tình</td>
+                                        <td class="text-center">Bán hàng</td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button class="btn btn-default js-modal-close">Thoát</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--/modal revenue-->
+
+            <!--Modal update-->
+            <div id="detailform1" class="modal fade js-modal1">
                 <div class="modal-dialog">
                     <div class="modal-content js-modal-content1">
                         <div class="modal-header">
                             <button type="button" class="close js-modal-close1">
                                 <span>x</span>
                             </button>
-
+                            <h4 class="modal-title">Khoản chi trong ngày</h4>
                         </div>
+
                         <div class="modal-body form-horizontal">
-                            <h1 class="text-center">Hóa đơn bán hàng</h1>
-                            <h2 class="text-center">[Mã HĐ:HD01]</h2>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p>
-                                        <span>
-                                            <i class="icon-user"></i>
-                                            Người bán:
-                                        </span> Lê Thị Tình
-                                    </p>
-                                    <p>
-                                        <span>
-                                            Ngày:
-                                        </span> 21/06/2000
-                                    </p>
-                                    <p>
-                                        <span>Tên khách hàng:</span> Lê Mỹ An
-                                    </p>
-                                    <p>
-                                        <span>
-                                            Địa chỉ nhận hàng:
-                                        </span> Sen Thủy
-                                    </p>
-                                    <p>
-                                        <span>Sđt:</span> 0968699534
-                                    </p>
+                            <table class="table_e">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">
+                                            STT
+                                        </th>
+                                        <th class="text-center">Tên sản phẩm</th>
+                                        <th class="text-center">Số lượng</th>
+                                        <th class="text-center">Tổng tiền</th>
+                                        <th class="text-center">Số tiền chi</th>
+                                        <th class="text-center">Người chi</th>
+                                        <th class="text-center">Bộ phận</th>
+                                    </tr>
+                                </thead>
 
-                                </div>
-                                <h3>Chi tiết sản phẩm</h3>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center">1</td>
+                                        <td class="text-center">Ip 13 mini</td>
+                                        <td class="text-center">10</td>
+                                        <td class="text-center">340.000.000 VNĐ</td>
+                                        <td class="text-center">340.000.000 VNĐ</td>
+                                        <td class="text-center">Lê Thị Tình</td>
+                                        <td class="text-center">Thủ kho</td>
+                                    </tr>
 
-                                <table class="table ">
-                                    <thead>
-                                        <tr>
-                                            <th class="text-center">STT</th>
-                                            <th class="text-center">Sản phẩm</th>
-                                            <th class="text-center">Số lượng</th>
-                                            <th class="text-center">Đơn vị</th>
-                                            <th class="text-center">Giá</th>
-                                            <th class="text-center">Thành tiền</th>
-                                        </tr>
+                                    <tr>
+                                        <td class="text-center">2</td>
+                                        <td class="text-center">Ip 13 mini</td>
+                                        <td class="text-center">10</td>
+                                        <td class="text-center">340.000.000 VNĐ</td>
+                                        <td class="text-center">340.000.000 VNĐ</td>
+                                        <td class="text-center">Lê Thị Tình</td>
+                                        <td class="text-center">Thủ kho</td>
+                                    </tr>
 
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="text-center">1</td>
-                                            <td class="text-center">Iphone 13 mini</td>
-                                            <td class="text-center">01</td>
-                                            <td class="text-center">Cái</td>
-                                            <td class="text-center">20.000.000 VNĐ</td>
-                                            <td class="text-center">20.000.000 VNĐ</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="bold text-right">
-                                <h4>Thuế GTGT :10% </h4>
-                            </div>
-                            <div class="bold text-right">
-                                <h4>Tổng cộng :22.000.000 VNĐ </h4>
-                            </div>
+                                </tbody>
+
+                            </table>
                         </div>
 
                         <div class="modal-footer">
-                            <button class="btn btn-default">Thoát</button>
+                            <button class="btn btn-default js-modal-close1">Thoát</button>
 
                         </div>
+
                     </div>
                 </div>
             </div>
-            <!--/modal detail-->
+            <!--/modal update-->
 
 
-            <!--Modal delete-->
-            <div id="deleteform" class="modal fade js-modal3">
-                <div class="modal-dialog">
-                    <div class="modal-content js-modal-content3">
-                        <div class="modal-header">
-                            <button type="button" class="close js-modal-close3">
-                                <span>x</span>
-                            </button>
-                            <h4 class="modal-title">Xóa mục này</h4>
-                        </div>
-                        <div class="modal-body">Bạn chắc chắn muốn xóa mục này chứ?</div>
-                        <div class="modal-footer">
-                            <button class="btn btn-danger"> Xóa</button>
-                            <button class="btn btn-default js-cancel"> Hủy bỏ</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--/modal delete-->
 
 
 
@@ -376,92 +405,79 @@
     <script src="js/fastclick.js"></script>
     <!-- NProgress -->
     <script src="js/nprogress.js"></script>
-    <!-- bootstrap-progressbar -->
-    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
-    <!-- iCheck -->
-    <script src="../vendors/iCheck/icheck.min.js"></script>
+
     <!-- bootstrap-daterangepicker -->
     <script src="js/moment.min.js"></script>
     <script src="js/daterangepicker.js"></script>
     <!-- bootstrap-wysiwyg -->
     <script src="js/bootstrap-wysiwyg.min.js"></script>
     <script src="js/jquery.hotkeys.js"></script>
-    <script src="../vendors/google-code-prettify/src/prettify.js"></script>
-    <!-- jQuery Tags Input -->
-    <script src="../vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
-    <!-- Switchery -->
-    <script src="../vendors/switchery/dist/switchery.min.js"></script>
-    <!-- Select2 -->
-    <script src="../vendors/select2/dist/js/select2.full.min.js"></script>
-    <!-- Parsley -->
-    <script src="../vendors/parsleyjs/dist/parsley.min.js"></script>
-    <!-- Autosize -->
-    <script src="../vendors/autosize/dist/autosize.min.js"></script>
-    <!-- jQuery autocomplete -->
-    <script src="../vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js"></script>
-    <!-- starrr -->
-    <script src="../vendors/starrr/dist/starrr.js"></script>
+
     <!-- Custom Theme Scripts -->
     <script src="js/custom.min.js"></script>
 
     <script>
+        const modal = document.querySelector('.js-modal')
         const modal1 = document.querySelector('.js-modal1')
 
-        const modal3 = document.querySelector('.js-modal3')
 
-        const modalClose1 = document.querySelector('.js-modal-close1')
+        const modalCloses = document.querySelectorAll('.js-modal-close')
+        const modalClose1s = document.querySelectorAll('.js-modal-close1')
 
-        const modalClose3 = document.querySelector('.js-modal-close3')
 
+        const modalContent = document.querySelector('.js-modal-content')
         const modalContent1 = document.querySelector('.js-modal-content1')
-        const modalContent3 = document.querySelector('.js-modal-content3')
 
-        const details = document.querySelectorAll('.js-add-de')
-        const deles = document.querySelectorAll('.js-add-dele')
-        const cancel = document.querySelector('.js-cancel')
+        const details = document.querySelectorAll('.js-revenue')
+        const detail1s = document.querySelectorAll('.js-expenses')
+
 
 
         function showDetail() {
+            modal.classList.add("in")
+        }
+
+        function showDetail1() {
             modal1.classList.add("in")
         }
 
 
-        function showDelete() {
-            modal3.classList.add("in")
+
+        function hiden() {
+            modal.classList.remove("in")
         }
-
-
 
         function hiden1() {
             modal1.classList.remove("in")
         }
 
 
-        function hiden3() {
-            modal3.classList.remove("in")
-        }
+
+
 
         for (const detail of details) {
             detail.addEventListener('click', showDetail)
         }
-
-
-        for (const dele of deles) {
-            dele.addEventListener('click', showDelete)
+        for (const detail1 of detail1s) {
+            detail1.addEventListener('click', showDetail1)
         }
-        cancel.addEventListener('click', hiden3)
-        modalClose1.addEventListener('click', hiden1)
-        modalClose3.addEventListener('click', hiden3)
+
+        for (const modalClose of modalCloses) {
+            modalClose.addEventListener('click', hiden)
+        }
+
+        for (const modalClose1 of modalClose1s) {
+            modalClose1.addEventListener('click', hiden1)
+        }
 
 
-        modal1.addEventListener('click', hiden1)
-        modalContent1.addEventListener('click', function(event) {
+        modal.addEventListener('click', hiden)
+        modalContent.addEventListener('click', function(event) {
             event.stopPropagation()
         })
 
-
-        modal3.addEventListener('click', hiden3)
-        modalContent3.addEventListener('click', function(event) {
+        modal1.addEventListener('click', hiden1)
+        modalContent1.addEventListener('click', function(event) {
             event.stopPropagation()
         })
     </script>
